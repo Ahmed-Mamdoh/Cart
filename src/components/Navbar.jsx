@@ -1,8 +1,8 @@
 const Navbar = ({numOfProducts,total,theme, add}) => {
   return (
     <>
-      <div className={`navbar ${theme ? 'bg-gray-700' : 'bg-gray-100'} shadow-sm`}>
-        <div className="flex-1 flex gap-52">
+      <div className={`navbar ${theme ? 'bg-gray-700' : 'bg-gray-100'} shadow-sm flex flex-col sm:flex-row gap-4 sm:gap-0`}>
+        <div className="flex-1 flex justify-around flex-col gap-4 sm:gap-0 sm:flex-row items-center content-center">
           <a className={`btn btn-ghost ${theme ? 'text-white' : 'text-black'} text-xl `}>Cart</a>
           <button className="btn btn-primary" onClick={() => add(1)}>Add Chipsy</button>
           <button className="btn btn-primary" onClick={() => add(2)}>Add Pepsi</button>
